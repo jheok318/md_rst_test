@@ -60,6 +60,8 @@ Section Title           ###### Section Title
 #. 목록
 ```
 
+### 들여쓰기
+
 ```rst
 들여쓰기 없음
     띄어쓰기 4번 들여쓰기 1번
@@ -68,3 +70,73 @@ Section Title           ###### Section Title
 들여쓰기 없음
 ```
 
+### 코드블록
+
+- Markdown의 ```라고 생각하면 된다.
+
+```c
+.. code::
+
+printf_s("rst");
+```
+
+### 이미지
+
+```
+.. image:: 이미지파일 경로
+	:height: 250
+	:width: 250
+	:scale: 50
+	:alt: 이미지 설명
+```
+
+### 표
+
+- 표를 표현하는 방식은 2가지이다.
+
+```
++------------+------------+-----------+ 
+| Header 1   | Header 2   | Header 3  | 
++============+============+===========+ 
+| body row 1 | column 2   | column 3  | 
++------------+------------+-----------+ 
+| body row 2 | Cells may span columns.| 
++------------+------------+-----------+ 
+| body row 3 | Cells may  | - Cells   | 
++------------+ span rows. | - contain | 
+| body row 4 |            | - blocks. | 
++------------+------------+-----------+
+
+=====  =====  ====== 
+   Inputs     Output 
+------------  ------ 
+  A      B    A or B 
+=====  =====  ====== 
+False  False  False 
+True   False  True 
+False  True   True 
+True   True   True 
+=====  =====  ======
+```
+
+### 수평선
+
+- 단락 분리시 사용
+- 4개 이상의 -를 사용하여 표시
+- 위 아래 줄에 어떠한 문자가 있어서는 안됨
+
+```
+ABCDEF
+
+--------
+
+GHIJKL
+```
+
+### 하이퍼링크
+
+```
+.. _링크1: http://www.naver.com/
+
+'링크2 <http://www.naver.com/>'_
+```
