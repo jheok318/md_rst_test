@@ -111,6 +111,12 @@ RST
     :scale: 50
     :alt: 이미지 설명
 
+.. image:: img/01.png
+  :height: 300
+  :width: 500
+  :scale: 50
+  :alt: 관짝
+
 
 표
 ===
